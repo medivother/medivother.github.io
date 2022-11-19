@@ -7,9 +7,9 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://drive.google.com/file/d/1WK4ITV8q0eiSgkF4K30slnAjFIbOPPGB/view?usp=sharing
+  assets/img/prova8.png
 optimized_image: >-
-  https://drive.google.com/file/d/1WK4ITV8q0eiSgkF4K30slnAjFIbOPPGB/view?usp=sharing
+  assets/img/prova8.png
 category: blog
 tags:
   - welcome
@@ -88,8 +88,8 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
 ![placeholder](https://placehold.it/800x400 "Large example image") ![placeholder](https://placehold.it/400x200 "Medium example image") ![placeholder](https://placehold.it/200x200 "Small example image")
-![placeholder](https://drive.google.com/file/d/1WK4ITV8q0eiSgkF4K30slnAjFIbOPPGB/view?usp=sharing)
-https://drive.google.com/file/d/1PirEpBvltagP0bhP5YRTOvnU_o1GA8Py/view?usp=share_link
+![placeholder]assets/img/prova8.png
+assets/img/prova8.png
 ## Tables
 
 Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
