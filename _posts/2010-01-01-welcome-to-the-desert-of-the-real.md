@@ -7,9 +7,9 @@ description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
 image: >-
-  https://drive.google.com/drive/folders/14JyoHaPMlq5bHc0wQoxhtOxKUTBoOffW
+  https://drive.google.com/file/d/1WK4ITV8q0eiSgkF4K30slnAjFIbOPPGB/view?usp=share_link
 optimized_image: >-
-  https://drive.google.com/drive/folders/14JyoHaPMlq5bHc0wQoxhtOxKUTBoOffW
+  https://drive.google.com/file/d/1WK4ITV8q0eiSgkF4K30slnAjFIbOPPGB/view?usp=share_link
 category: blog
 tags:
   - welcome
