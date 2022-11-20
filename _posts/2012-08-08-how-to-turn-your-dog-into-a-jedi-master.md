@@ -14,118 +14,42 @@ tags:
 author: mranderson
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+# Distributions
+Definition of statistical distribution
+A statistical distribution, describes how values are distributed for a field. In other words, the statistical distribution shows which values are common and uncommon.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+But how do we obtain a distribution from a given dataset? A data matrix is made of rows, each of them being a unit ui, and of columns, which are the attributes x1, …, xn of the entities in dataset. To make it easier to explain this concept, let’s say that our dataset is made of 80 people, and some of its attributes are “color of eyes”, “heigth”, “weigth”, etc..
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+x1…	xj…	xk
+u1…			
+ui…		Xi,j	
+un			
+dataset
+Let’s focus on only one attribute at the moment, picking the “color of the eyes” one. Just by reading through the column and counting how many people have blue eyes, we are going to obtain something called relative frequency of that value in our attribute. Intuitively, this is the ratio of the actual number of favourable events to the total. To be more precise, for each value of an attribute xj we can compute its relative frequency, in order to create another table:
 
-## Inline HTML elements
+color of eyes
+blue eyes	8/80
+brown eyes	62/80
+green eyes	10/80
+univarite distribution of the attribute “color of the eyes”
+This is the (univariate) distribution of the color of the eyes of the people in the dataset. The term ‘distribution’ is used in descriptive as well as inductive statistics. In descriptive statistics it stands for the (absolute or relative) frequency of the values of a variable. A frequency distribution describes statistical data. We described it in the table above. In inductive statistics, it describes the distribution of probability of individual values for different variables. Mathematically, this describes the distribution function and the density function. 
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+Univariate and multivariate distributions
+In statistics, a univariate distribution is a probability distribution of only one random variable. This is in contrast to a multivariate distribution, the probability distribution of a random vector (consisting of multiple random variables).
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+An example of univariate distribution is the one about the color of the eyes that we saw above: we picked up a random variable and calculated it’s relative frequency to obtain the distribution of the color of the eyes in the dataset. Whereas when we want to calculate the multivariate distribution, we want to know how many entities have the same values for the selected attributes: in other words, the joint frequency.
 
-Most of these elements are styled by browsers with few modifications on our part.
+Conditional and marginal distribution
+A conditional distribution is a distribution of values for one variable that exists when you specify the values of other variables. This type of distribution allows you to assess the dispersal of your variable of interest under specific conditions, hence the name.
 
-# Heading 1
+That might sound a bit complex, but the idea is straightforward.
 
-## Heading 2
+Suppose you’re selling computers, and you record the type of computer and gender for each sale. Now imagine that you want to assess the dispersal of computer types for only female customers. That’s an example of a conditional distribution. We’re conditioning computer types on the gender variable value of female.
 
-### Heading 3
 
-#### Heading 4
+On the other hand, a marginal distribution is a distribution of values for one variable that ignores a more extensive set of related variables in a dataset. That definition sounds a bit convoluted, but the concept is simple. The idea is that when you have a larger set of related variables that you collected for a study, you might want to focus on one of them to answer a specific question.
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
+Imagine the same context as descripted before: we have a computer shop where we sell differen types of products and we also record the gender of our costumers. Now suppose that while you measured both variables, you want to know the distribution of computer types without factoring in gender—that’s a marginal distribution.
 
 
 
