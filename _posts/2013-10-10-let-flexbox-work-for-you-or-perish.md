@@ -11,8 +11,9 @@ tags:
   - css
   - frontend
 author: mranderson
-paginate: true
 ---
+
+
 
 # Definition of statistics
 We will start our journey into the statistics world by analyzing two popular definitions of it. We will see that each of these definitions, written by statesmen and authors, expose primary concepts of the subject. But first, lets see an informal one:
