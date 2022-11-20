@@ -13,124 +13,24 @@ tags:
 author: mranderson
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+# Conditional, joint and relative frequency
+I will explain what conditional, joint and relative frequencies are using an example.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-## Inline HTML elements
-
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+Let’s take a bivariate distribution taken from a survey on people attending an engeneering class: their attributes are their gender (boy or girl) and their favourite console to play videogames (PC, PlayStation or Xbox)
 
 
+Bivariate distribution
+In statistics, the frequency (or absolute frequency) of an event i is the number of times the observation ni occurred in an experiment or study: in our example, if we take into account as an event the fact that a student is a male or a famale, the absolute frequencies are boy=90 and girl=45. So to calculate an absolute frequency we consider only one attribute.
 
+On the other hand, a relative frequency is the ratio of the frequency of a particular event in a statistical experiment to the total frequency.
 
+There are three types of relative frequency:
 
+Joint Relative Frequency: The ratio that compares an intersection of qualitative data to the total frequency. In the table, the blue cells represent the joint relative frequency.
+Marginal Relative Frequency: The ratio that compares a qualitative total to the total frequency.  In the table above, the marginal frequencies can be found using the bottom or far-right “total” columns, the orange ones.
+Conditional Relative Frequency: A frequency that compares a specific joint relative frequency to a marginal relative frequency. So it is simply a relative frequency computed in a subset of the population.
+Let’s go on with our example to explain these frequencies. An example of joint frequency is the number of girls that use the PlayStation: they are 30 over a total of 135 ( we can obtain this number by looking at the intersection of “Girl” and “Playstation”), so Jgp= 30/135 = 0,22 = 22%.
 
+As we said in the definition , the marginal frequency is a ratio that compares a qualitative total (a specific attribute) to the total: in fact, a marginal distribution of a bivariate distribution is a univariate distribution. As an example of it we can take the number of PC players, which is 35, over 135: 35/135 = 0,25 = 25%. This means that 25% of our population plays videogames on the pc.
 
-
-
-
+Lastly we can calculate the conditional frequency, which compares a joint frequency with a marginal one: doing this we are effectively imposing a condition. For example, let’s calculate the ratio of the boys how play the Xbox: the condition here is that we only care about a subset of our population, the boys, so we are going to take their marginal frequency which is 90.Give that we obtain Cb,x=15/90 = 0,16 = 16%.
