@@ -11,6 +11,7 @@ tags:
   - css
   - frontend
 author: mranderson
+paginate: true
 ---
 
 # Definition of statistics
