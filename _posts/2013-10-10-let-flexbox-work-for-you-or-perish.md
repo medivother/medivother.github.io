@@ -1,9 +1,9 @@
 ---
 date: 2017-08-14 22:55:45
 layout: post
-title: Let flexbox work for you or perish
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+title: Homework 1
+subtitle: First homework of the course.
+description: Introduction to the subject: what's statistics and how to compute stats using .NET
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
 category: css
@@ -13,123 +13,59 @@ tags:
 author: mranderson
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+# Definition of statistics
+We will start our journey into the statistics world by analyzing two popular definitions of it. We will see that each of these definitions, written by statesmen and authors, expose primary concepts of the subject. But first, lets see an informal one:
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+Statistics is the science of analyzing data, either numerical data or non-numerical data. Statistics are used every day to solve problems, answer questions, and improve quality and performance.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+The Heritage Dictionary defines statistics as “The mathematics of the collection, organization, and interpretation of numerical data , especially the analysis of population characteristics by inference from sampling.”
 
-## Inline HTML elements
+So statistics can be considered as a branch of mathematics, although some consider it to be distinct from it: the reason is that, while many scientific investigations make use of data, statistics is concerned with the use of data in the context of uncertainty. “Statistics is a body of methods for making wise decisions in the face of uncertainty” , as A.Wallis and Harry Roberts said. Uncertainty refers to epistemic situations ( context where we want to achieve knowledge ) involving unknown information, and it applies to predictions of future events and measurements; it arises in any number of fields such as insurance, physics, economics etc.. but all of them make use of statistical studies.
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+Anyway, there are two main branches that coexist in the statistical world: descriptive and inferential statistics. are used to describe the characteristics of a set of data. Descriptive statistics is a summary statistic that qualitatively describes a collection of information: in everyday life it can be seen in charts and graphs. Inferential statistics on the other hand is the process of using data analysis to deduce properties of a probability distribution, so it is used to quantitatively describe a dataset.
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+Speaking of the devil, we will learn more about the bread and butter of this subject, which is data, in the next article.
 
 
 
 
+# What is a dataset?
+As we said in the previous article, the fundamental element that we take into consideration when we study statistics is data: data is a collection of discrete values that convey some information. We can collect data about litterally anything: from natural events to football games, from industrial processes to the health of pets.. every small piece of our life is made of data.
 
+Given the fact that data are so etherogeneous, statesmen need a rigorous approach to to collect and organize them: they need to build up a dataset. Data set (or dataset) refers to any organised collection of data. The data set lists values for each of the variables and for each member of the dataset. Each value is known as a datum (Eurostat).
 
+The process of building a dataset starts with the so called observation units: these are sets of entities from which we want to collect data, so they are our primary source; although I said that compose a “set” we cannot consider this a “dataset” yet. That’s because statistical data sets are collection of organized and specific data, and this means that it’s necessary to establish what we want to measure from this set of units. To do so, we observe the units that we picked, and assign the result of this observation to a variable. Let’s keep up with it following an example:
+
+if we have a set of cars (data), which isn’t a dataset yet, we can measure the maximum speed of all of each of them (observation) and create a table were each car is a record reporting its name and maximum speed (variables). Now we finally have turned it into a dataset!
+
+Car Name (variable)	Maximum speed (variable)
+Toyota Yaris (observation)	170 Km/h (observation)
+Fiat Panda	160 Km/h
+Lamborghini Urus	305 Km/h
+Citroen C2	150 Km/h
+Ferrari Roma	330 Km/h
+Renault Clio	150 Km/h
+Dataset
+Having said that, we can conclude defining a distinction between what is a variable and what is an attribute: an attribute is a quality of a certain object, for example the maximum speed of a Lamborghini Urus. A variable is the logical set of attributes that can be measured. Variables can “vary” – for example, be high or low. How high, or how low, is determined by the value of the attribute
+
+To conclude, it is also important to highlight the difference between a dataset, and another fundamental concept of statistics, populations. A population is a set of similar items such as individuals, companies, etc, on which we’d like to draw inference. For example, if we want to make inference about the proportion of HIV positive American citizens, then American citizens is our population. For obvious reasons, we cannot sample the entire population. Thus, we use a subset of our population which is called a sample. When the sampling procedure is done, the data is usually collected in a data set.
+
+See you in the third article, to know about the applications of statistics in cryptography!
+
+# Applications of statistics in cybersecurity
+Cybersecurity is and will be a central topic of our century: banks, companies and normal people are affected every day by cyber attacks.
+
+These attacks are reported to cost billions of dollars in lost productivity, lost data, and lost business. Detecting and modeling these attacks has only recently begun to attract the attention of statisticians. One example of real application of statistic’s techniques to protect the network is given by the Imperial College of London.
+
+The Imperial Colledge of London uses statistics to identify intrusions and anomalous behaviour and therefore protect against cyber-attacks and fraudulent activity. Statistical techniques which have been so far been deployed include classification, data mining, streaming data analysis, cluster analysis.
+
+More generally, some other applications of statistics in the field of cybersecurity are:
+
+Statistics used to predict cybersecurity risk
+Change point detection
+Graph analysis
+Penalised regression analysis
+Machine learning
 
 
 
