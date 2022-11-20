@@ -13,124 +13,53 @@ tags:
 author: mranderson
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+# Concept of population and sampling distribution
+Population
+Inferential statistics is made of two layers: one empirical. which we will call “descriptive”, and the second one which is totally theoretical and imaginary, which we will call “inferential”. The concept of population is present in both of this layers, but with some differences between the two.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+Generally speaking, a population is a set of similar items or events which is of interest for some question or experiment. A statistical population can be a group of existing objects or a hypothetical and abstract group of objects conceived as a generalization from experience. The aim of statistical analysis is to produce information about some chosen population.
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+We can also define a population as the pool of individual entities from which a statistical sample is drawn for a study. Thus, any selection of individuals grouped by a common feature can be said to be a population. A sample may also refer to a statistically significant portion of a population, not an entire population. For this reason, a statistical analysis of a sample must report the approximate standard deviation, or standard error, of its results from the entire population as I showed in the application section of this homework. Only an analysis of an entire population would have no standard error.
 
-## Inline HTML elements
+So a population is a whole, it’s every member of a group and it is the opposite to a sample, which is a fraction or percentage of a group chosen to represent the population. Moreover, the statistical sample must be unbiased and accurately model the population (every unit of the population has an equal chance of selection).
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+Now that we defined the concept of population, and accurately separated it from the concept of sample, we can discuss about the diffrence between the descriptive and inferential layer. The first one consists of a known population, from which we extract a dataset, distributions and statistics in the end; there is also a population in the second one, but it is unknown to use. Nevertheless we want to extract also from this population datasets, distributions and statistics, but how can we do that?
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thiago Rossener</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+We “infer” theorical probabilities from the empirical ones, on a population that we don’t know. This process is called induction. There are two main techniques to do so:
 
-Most of these elements are styled by browsers with few modifications on our part.
+Estimation
+Test
+If we want to adopt the second one, we need to start from some hypothesis on the unknown population, then make a survey on the sample and see if it is coherent with our initial belief.
 
-# Heading 1
+Sampling distribution
+I would define a sampling distribution as the set of probabilities in a statistic computation. The term “sampling” is related to the fact that the statistic is a function of the sampling data, obtained from a random extraction in the population. The variability inside the population is described mathematically using a random variable: n sapling observations of this variable generate n possible realizations of it, so n other random variables, which constitute a statistic sample.
 
-## Heading 2
+So a sampling distribution is a probability distribution of a statistic obtained from a larger number of samples drawn from a specific population. The sampling distribution of a given population is the distribution of frequencies of a range of different outcomes that could possibly occur for a statistic of a population. It can be:
 
-### Heading 3
+continous
+discrete
+and this difference can be seen if we look at the function that we use to calculate the distribution:
 
-#### Heading 4
+continous -> density function
+discrete -> probability function
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+# The expected value and variance of the sampling mean and the sampling variance
+To better understand the idea of sampling mean, we can imagine X1,X2,….,Xn random samples from a distribution and μ as mean and σ2 as variance . The mean is calculated as:
 
-## Code
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+Once calculated mean of each sample we can write:
 
-```js
-// Example can be run directly in your JavaScript console
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+Since each of the Xi has the same distribution:
 
-// Call the function
-adder(2, 6);
-// > 8
-```
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+So we can state that the expected value of the mean is equal to the mean.
 
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+We can use the same approach to calculate the variance:
 
 
 
 
 
-
-
-
-
+So we can conclude that the variance decreases if the number of samples increases, which is undestandable because the more we make extractions from the population the more we “cover” all of its singular entities, and reduce the quadratic error.
 
