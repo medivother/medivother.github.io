@@ -34,3 +34,20 @@ Let’s go on with our example to explain these frequencies. An example of joint
 As we said in the definition , the marginal frequency is a ratio that compares a qualitative total (a specific attribute) to the total: in fact, a marginal distribution of a bivariate distribution is a univariate distribution. As an example of it we can take the number of PC players, which is 35, over 135: 35/135 = 0,25 = 25%. This means that 25% of our population plays videogames on the pc.
 
 Lastly we can calculate the conditional frequency, which compares a joint frequency with a marginal one: doing this we are effectively imposing a condition. For example, let’s calculate the ratio of the boys how play the Xbox: the condition here is that we only care about a subset of our population, the boys, so we are going to take their marginal frequency which is 90.Give that we obtain Cb,x=15/90 = 0,16 = 16%.
+
+# Statistical independence
+“Statistical independence is a concept in probability theory. Two events A and B are statistical independent if and only if their joint probability can be factorized into their marginal probabilities, i.e., P(A ∩ B) = P(A)P(B)”
+
+This definition of statistical independence gives us a hint about what this concept means, but we can go deeper: let’s start to undestand what independence means also in the frequency world, which is propedeutic to the probabilistic one.
+
+If two attributes are independent, this means that the frequency of the first isn’t altered by the frequency of the second and vice versa. To give a more formal definition of it, we can say that independece between two attributes X and Y means that the conditional distribution of an attribute X over any value y∈Y has the same shape of the marginal distribution of X, and vice versa.
+
+So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: freq(A ∩ B) = freq(A) x freq(B), which also means freq(A|B)=freq(A).
+
+Conditional relative frequency then, is simply the relative frequency computed on a subset of the population.
+
+Finally, we can show the mathematical relationship between the relative frequencies we computed in the previous article:
+
+freq(A|B) = freq(A)
+freq(A ∩ B) = freq(A) x freq(B) because: freq(A ∩ B) = freq(A|B) x freq(B) = freq(B|A) x freq(A)
+
