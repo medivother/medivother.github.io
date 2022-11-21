@@ -6,10 +6,10 @@ subtitle: First homework of the course.
 description: Introduction to the subject
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
-category: css
+category: intro
 tags:
-  - css
-  - frontend
+  - statistics
+  - sapienza
 author: mranderson
 ---
 
