@@ -10,7 +10,7 @@ category: intro
 tags:
   - statistics
   - sapienza
-author: Francesco Goberti
+author: francesco
 ---
 
 
