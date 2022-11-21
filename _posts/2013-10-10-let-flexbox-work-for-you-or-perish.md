@@ -3,7 +3,7 @@ date: 2017-08-14 22:55:45
 layout: post
 title: Homework 1
 subtitle: First homework of the course.
-description: Introduction to the subject: what's statistics and how to compute stats using .NET
+description: Introduction to the subject
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme2_ylcxxz.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme2_ylcxxz.jpg
 category: css
