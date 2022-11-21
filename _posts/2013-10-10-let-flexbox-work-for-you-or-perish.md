@@ -11,6 +11,7 @@ tags:
   - statistics
   - sapienza
 author: francesco
+use_math: true
 ---
 
 
