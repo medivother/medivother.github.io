@@ -1,5 +1,5 @@
 ---
-date: 2017-08-14 22:55:45
+date: 2022-09-30 22:55:45
 layout: post
 title: Homework 1
 subtitle: First homework of the course.
