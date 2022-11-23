@@ -31,11 +31,12 @@ paginate: true
 
 
 # Possible derivation of the Normal Distribution
-> Abraham de Moivre, when he came up with this formula, had to assure that the points of inflection were exactly one standard deviation away from the center, and so that it was bell-shaped, as well as make sure that the area under the curve was exactly equal to one.
+Abraham de Moivre, when he came up with this formula, had to assure that the points of inflection were exactly one standard deviation away from the center, and so that it was bell-shaped, as well as make sure that the area under the curve was exactly equal to one.And somehow they came up with the standard normal distribution, which is as follows:
 
-And somehow they came up with the standard normal distribution, which is as follows:
-
-ϕ(x)=12π−−√e−12x2
+$phi(x) = \frac{1}{\sqrt{2\pi}}e^{-\dfrac{1}{2}x^2}$
+                                      
 And even cooler, he found the distribution for when the mean was not 0 and the standard deviation was not 1, and came up with:
 
-f(x)=1σ2π−−√e−(x−μ)22σ2
+$f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\dfrac{(x - \mu)^2}{2\sigma^2}}$
+
+This quote is from a a user on the web made me think a lot: it is frequent, for a student like me, to study concepts like the Normal Distribution, or the Lebsque integral or whatever formula, without completely 
