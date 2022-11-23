@@ -61,12 +61,11 @@ $g(t)=Ae^{−Bt}$.
 So A will be some normalising constant. B somehow reflects the units I'm measuring in. (So if I measure the distance in cm B will be 10 times as big as if I measured in mm). B must be negative because the density should be a decreasing function of distance (I'm not that bad at darts.)
 
 So to work out A I need to integrate $f(⋅,⋅)$ over R2 a quick change of coordinates and
-$∬Rf(x,y)dxdy=2π∫∞0tg(t)dt=2πB2.$  	$\displaystyle \int_\int{R}^f(x,y)dxdy=2π\int_{0}^{\infty}tg(t)dt=2πB2.$
-for
+$\displaystyle \iint_{R}f(x,y)dxdy=2π\int_{0}^{\infty}tg(t)dt=2πB2.$
 
-So we should set A=B22π it's convenient to choose B in terms of the standard deviation, so we set B=12σ and A=12πσ2.
+So we should set $A=B22π$ it's convenient to choose B in terms of the standard deviation, so we set $B=12σ$ and $A=12πσ2$.
 
-So if I set f~(x)=12π√σe−x22σ then f(x,y)=f~(x)f~(y).
+So if I set $f~(x)=\frac{1}{\sqrt{2πσ}}e^{−x^{\frac{x^2}{2σ}}}$ then $f(x,y)=f~(x)f~(y)$.
 
 So the e comes from the fact I wanted my X and Y coordinates to be independent and the π comes from the fact that I wanted rotational invariance so I'm integrating over a circle.
 
@@ -78,4 +77,47 @@ That means that when I add independent normal distributions together I get anoth
 
 It's this property that makes it so useful, because if I take the average of a very long sequence of random variables I should get something that's the same shape no matter how long my sequence is and taking a sequence twice as long is like adding the two sequences together. It's this property of the normal distribution that makes it so useful.
 
-The Normal distribution came about from approximations of the binomial distribution (de Moivre), from linear regression (Gauss), and from the central limit theorem. The derivation given by Tim relates more closely to the linear regression derivation, where the amount of error is represented by a Normal distribution when errors are assumed symmetric about a mean, and to decrease away from the mean
+## A more formal definition
+The Normal distribution came about from approximations of the binomial distribution (de Moivre), from linear regression (Gauss), and from the central limit theorem. The derivation given by Tim relates more closely to the linear regression derivation, where the amount of error is represented by a Normal distribution when errors are assumed symmetric about a mean, and to decrease away from the mean.
+
+Theorem: Two identically distributed independent random variables follow a distribution, called the normal distribution, given that their probability density functions (PDFs) are known to be continuous and differentiable, symmetric about a mean, and decrease towards zero away from the mean.
+
+Proof: Let X and Y be identically distributed independent random variables with continuous and differentiable PDFs. It is assumed that the PDFs are even functions, for example fX(x)=fX(−x), and fX(x)→0 as x→±∞.
+
+Their joint PDF, because of their independence, is fXY(x,y)=fX(x)fY(y). Because they are identically distributed and symmetric, only the norm or magnitude of the two variables is unique - that is, x and y can be interchanged with no effect on the final probability. They are identically distributed and symmetric, figuratively related to a circle, as opposed to the unequally distributed oval. Therefore, there must exist a function g(r) such that
+fXY(x,y)=g(x2+y2−−−−−−√)
+Which, because g is not yet determined, is equivalent to
+fXY(x,y)=g(x2+y2).
+
+From the definition of the joint distribution,
+fX(x)fY(y)=g(x2+y2).
+Which, for y=0, gives
+fX(x)∝g(x2).
+Assuming fY(0) is a constant. Similar argument gives
+fY(y)∝g(y2).
+These last two results are significant, because substitution shows that the product of g(x2)g(y2) is proportional to the sum g(x2+y2):
+g(x2)g(y2)∝g(x2+y2)
+And it is known from algebra that the only function to have this property is the exponential function (and the natural logarithm).
+
+This is to say, g(r) will be some type of exponential,
+g(r)=AeBr.
+Where A and B are constants yet to be determined. We assume, now, that wherever the expected value is, the probability of error away from this expected value will decrease. That is to say, we expect that the chance of error should be minimum near the expected value, and decrease to zero away from this value. Another way of saying this is that the mean must be the maximum of g(r), and yet another way of saying this is that g(r) must approach 0 as r→±∞. In any case, we need the argument to the exponential to be negative.
+g(r)=Ae−Br
+
+Now if we return to our joint PDF,
+fXY(x,y)=fX(x)fY(y)=g(x2+y2)
+Here again, we can investigate the PDF of fX(x) alone by setting y=0,
+fX(x)∝g(x2)=Ae−Bx2
+Note that the mean of this distribution is 0. In order to give a mean of μ, this distribution becomes
+fX(x)∝Ae−B(x−μ)2.
+
+The constants are determined from the fact that the integral of the PDF fX(x) must be equal to 1 for the entire domain. That is, the cumulative distribution function (CDF) must approach 1 at the upper limit (probability cannot be >100%).
+∫∞0fX(x)dx=1
+The integral of e−Bx2 is πB−−√, thus
+A∫∞0e−Bx2dx=AπB−−√=1
+A=Bπ−−√
+The constant B is, for convenience, substituted by σ2=12B, so that A=12πσ2√ and
+fX(x)=12πσ2−−−−√e−(x−μ)22σ2.
+Which is, of course, the common form of what is known as the Normal distribution. Note that the proportional symbol became an equals sign, which is necessary from the assumption that X is a random variable, and all random variables have a PDF which integrates to 1. This proves the theorem.
+
+One will find that σ2 is called the variation, and σ is the standard deviation. The parameters σ2 and μ, that is, the variation and the mean, may be chosen arbitrarily, and uniquely define the distribution.
