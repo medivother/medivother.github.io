@@ -42,7 +42,7 @@ $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\dfrac{(x - \mu)^2}{2\sigma^2}}$
 This quote is from a a user on the web made me think a lot: it is frequent, for a student like me, to study concepts like the Normal Distribution, or the Lebsque integral or whatever formula, without completely making his mind about how the matematicians who studied it came up with that string of numbers. So let's get deep into the understanding of the possible derivation of the Normal Distribution.
 
 ## Idea explained by a user on StackExchange
-Suppose I throw a dart into a dartboard. I aim at the centre of the board (0,0) but I'm not all that good with darts so the dart lands in a random position (X,Y) which has a joint density function f:R2→R+.
+Suppose I throw a dart into a dartboard. I aim at the centre of the board (0,0) but I'm not all that good with darts so the dart lands in a random position (X,Y) which has a joint density function $f:R^{2}→R^{+}$.
 
 Let's make two assumptions about the way I play darts.
 
@@ -51,19 +51,19 @@ Let's make two assumptions about the way I play darts.
 2. The random variables X and Y are independent, how much I miss left and right makes no difference to the distribution of how much I miss up and down.
 
 So by assumption one and Pythagoras I must be able to express the density
-$f(x,y)=g(x2+y2)$.
+$f(x,y)=g(x^{2}+y^{2})$.
 Now as the random variables X and Y are independent and identically distributed I must be able to express
 $f(x,y)∝f(x,0)f(0,y)$.
 Combining these assumptions we get that for every pair $(x,y)$ we have
-$g(x2+y2)∝g(x2)g(y2)$.
+$g(x^{2}+y^{2})∝g(x^{2})g(y^{2})$.
 This means that g must be an exponential function
 $g(t)=Ae^{−Bt}$.
 So A will be some normalising constant. B somehow reflects the units I'm measuring in. (So if I measure the distance in cm B will be 10 times as big as if I measured in mm). B must be negative because the density should be a decreasing function of distance (I'm not that bad at darts.)
 
-So to work out A I need to integrate $f(⋅,⋅)$ over R2 a quick change of coordinates and
+So to work out A I need to integrate $f(⋅,⋅)$ over $R^{2}$ a quick change of coordinates and
 $\displaystyle \iint_{R}f(x,y)dxdy=2π\int_{0}^{\infty}tg(t)dt=2πB2.$
 
-So we should set $A=B22π$ it's convenient to choose B in terms of the standard deviation, so we set $B=12σ$ and $A=12πσ2$.
+So we should set $A=\frac{B^{2}}{2π}$ it's convenient to choose B in terms of the standard deviation, so we set $B=\frac{1}{2σ}$ and $A=\frac{1}{2πσ^{2}}$.
 
 So if I set $f~(x)=\frac{1}{\sqrt{2πσ}}e^{−x^{\frac{x^2}{2σ}}}$ then $f(x,y)=f~(x)f~(y)$.
 
@@ -80,44 +80,46 @@ It's this property that makes it so useful, because if I take the average of a v
 ## A more formal definition
 The Normal distribution came about from approximations of the binomial distribution (de Moivre), from linear regression (Gauss), and from the central limit theorem. The derivation given by Tim relates more closely to the linear regression derivation, where the amount of error is represented by a Normal distribution when errors are assumed symmetric about a mean, and to decrease away from the mean.
 
-Theorem: Two identically distributed independent random variables follow a distribution, called the normal distribution, given that their probability density functions (PDFs) are known to be continuous and differentiable, symmetric about a mean, and decrease towards zero away from the mean.
+**Theorem**: Two identically distributed independent random variables follow a distribution, called the normal distribution, given that their probability density functions (PDFs) are known to be continuous and differentiable, symmetric about a mean, and decrease towards zero away from the mean.
 
-Proof: Let X and Y be identically distributed independent random variables with continuous and differentiable PDFs. It is assumed that the PDFs are even functions, for example fX(x)=fX(−x), and fX(x)→0 as x→±∞.
+**Proof**: Let X and Y be identically distributed independent random variables with continuous and differentiable PDFs. It is assumed that the PDFs are even functions, for example $f_{X}(x)=f_{X}(−x)$, and $f_{X}(x)→0$ as $x→±∞$.
 
-Their joint PDF, because of their independence, is fXY(x,y)=fX(x)fY(y). Because they are identically distributed and symmetric, only the norm or magnitude of the two variables is unique - that is, x and y can be interchanged with no effect on the final probability. They are identically distributed and symmetric, figuratively related to a circle, as opposed to the unequally distributed oval. Therefore, there must exist a function g(r) such that
-fXY(x,y)=g(x2+y2−−−−−−√)
+Their joint PDF, because of their independence, is $f_{XY}(x,y)=f_{X}(x)f_{Y}(y)$. Because they are identically distributed and symmetric, only the norm or magnitude of the two variables is unique - that is, x and y can be interchanged with no effect on the final probability. They are identically distributed and symmetric, figuratively related to a circle, as opposed to the unequally distributed oval. Therefore, there must exist a function g(r) such that
+$f_{XY}(x,y)=g(\sqrt{x^{2}+y^{2}}).$
 Which, because g is not yet determined, is equivalent to
-fXY(x,y)=g(x2+y2).
+$f_XY(x,y)=g(x^{2}+y^{2})$.
 
 From the definition of the joint distribution,
-fX(x)fY(y)=g(x2+y2).
+$f_{X}(x)f_{Y}(y)=g(x^{2}+y^{2})$.
 Which, for y=0, gives
-fX(x)∝g(x2).
-Assuming fY(0) is a constant. Similar argument gives
-fY(y)∝g(y2).
-These last two results are significant, because substitution shows that the product of g(x2)g(y2) is proportional to the sum g(x2+y2):
-g(x2)g(y2)∝g(x2+y2)
+$f_{X}(x)∝g(x^{2})$.
+Assuming $f_{Y}(0)$ is a constant. Similar argument gives
+$f_{Y}(y)∝g(y^{2})$.
+These last two results are significant, because substitution shows that the product of $g(x^{2})g(y^{2})$ is proportional to the sum $g(x^{2}+y^{2})$:
+$g(x^{2})g(y^{2})∝g(x^{2}+y^{2})$.
 And it is known from algebra that the only function to have this property is the exponential function (and the natural logarithm).
 
 This is to say, g(r) will be some type of exponential,
-g(r)=AeBr.
+$g(r)=Ae^{Br}$.
 Where A and B are constants yet to be determined. We assume, now, that wherever the expected value is, the probability of error away from this expected value will decrease. That is to say, we expect that the chance of error should be minimum near the expected value, and decrease to zero away from this value. Another way of saying this is that the mean must be the maximum of g(r), and yet another way of saying this is that g(r) must approach 0 as r→±∞. In any case, we need the argument to the exponential to be negative.
-g(r)=Ae−Br
+$g(r)=Ae^{−Br}$.
 
 Now if we return to our joint PDF,
-fXY(x,y)=fX(x)fY(y)=g(x2+y2)
-Here again, we can investigate the PDF of fX(x) alone by setting y=0,
-fX(x)∝g(x2)=Ae−Bx2
+$f_{XY}(x,y)=f_{X}(x)f_{Y}(y)=g(x^{2}+y^{2})$.
+Here again, we can investigate the PDF of $f_{X}(x)$ alone by setting y=0,
+$f_{X}(x)∝g(x^{2})=Ae^{−Bx^{2}}$.
 Note that the mean of this distribution is 0. In order to give a mean of μ, this distribution becomes
-fX(x)∝Ae−B(x−μ)2.
+$f_{X}(x)∝Ae^{−B(x−μ)^{2}}$.
 
-The constants are determined from the fact that the integral of the PDF fX(x) must be equal to 1 for the entire domain. That is, the cumulative distribution function (CDF) must approach 1 at the upper limit (probability cannot be >100%).
-∫∞0fX(x)dx=1
-The integral of e−Bx2 is πB−−√, thus
-A∫∞0e−Bx2dx=AπB−−√=1
-A=Bπ−−√
-The constant B is, for convenience, substituted by σ2=12B, so that A=12πσ2√ and
-fX(x)=12πσ2−−−−√e−(x−μ)22σ2.
+The constants are determined from the fact that the integral of the PDF $f_X(x)$ must be equal to 1 for the entire domain. That is, the cumulative distribution function (CDF) must approach 1 at the upper limit (probability cannot be >100%).
+$\displaystyle \int_{0}^{\infty}f_{X}(x)dx=1$.
+The integral of $e^{−Bx^{2}}$ is $\sqrt{\frac{π}{B}}$, thus
+$\displaystyle \int_{0}^{\infty}e^{Bx^{2}}dx=A\sqrt{\frac{π}{B}}=1$
+
+$A=\sqrt{\frac{B}{π}}$.
+
+The constant B is, for convenience, substituted by $σ^{2}=\frac{1}{2B}$, so that $A=\frac{1}{2πσ^{2}}$ and
+$f_{X}(x)=\sqrt{\frac{1}{2πσ^{2}}}e^{\frac{−(x−μ)^{2}}{2σ^{2}}}$.
 Which is, of course, the common form of what is known as the Normal distribution. Note that the proportional symbol became an equals sign, which is necessary from the assumption that X is a random variable, and all random variables have a PDF which integrates to 1. This proves the theorem.
 
-One will find that σ2 is called the variation, and σ is the standard deviation. The parameters σ2 and μ, that is, the variation and the mean, may be chosen arbitrarily, and uniquely define the distribution.
+One will find that $σ^{2}$ is called the variation, and σ is the standard deviation. The parameters $σ^{2}$ and μ, that is, the variation and the mean, may be chosen arbitrarily, and uniquely define the distribution.
