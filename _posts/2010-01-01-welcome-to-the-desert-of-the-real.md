@@ -42,6 +42,8 @@ $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\dfrac{(x - \mu)^2}{2\sigma^2}}$
 This quote is from a a user on the web made me think a lot: it is frequent, for a student like me, to study concepts like the Normal Distribution, or the Lebsque integral or whatever formula, without completely making his mind about how the matematicians who studied it came up with that string of numbers. So let's get deep into the understanding of the possible derivation of the Normal Distribution.
 
 ## Idea explained by a user on StackExchange
+I started to look information up on the web and came up with some different kinds of sources, some of which are more formal then others. To write this article I decided to start from a simple (and badly written) idea of a user named Tim on StackExchange, and then to subsequently add more mathematical formality to the derivation of the Normal Distribution. So let's jump into Tim's example.
+
 Suppose I throw a dart into a dartboard. I aim at the centre of the board (0,0) but I'm not all that good with darts so the dart lands in a random position (X,Y) which has a joint density function $f:R^{2}→R^{+}$.
 
 Let's make two assumptions about the way I play darts.
@@ -123,3 +125,4 @@ $f_{X}(x)=\sqrt{\frac{1}{2πσ^{2}}}e^{\frac{−(x−μ)^{2}}{2σ^{2}}}$.
 Which is, of course, the common form of what is known as the Normal distribution. Note that the proportional symbol became an equals sign, which is necessary from the assumption that X is a random variable, and all random variables have a PDF which integrates to 1. This proves the theorem.
 
 One will find that $σ^{2}$ is called the variation, and σ is the standard deviation. The parameters $σ^{2}$ and μ, that is, the variation and the mean, may be chosen arbitrarily, and uniquely define the distribution.
+
