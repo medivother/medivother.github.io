@@ -98,6 +98,17 @@ You can download the application from <a href="https://drive.google.com/file/d/1
 
 
 ## Description of the app
+
+
 This is just a quick and stupid app, which lets a red ball bounce around the window. The user has only the ability to stop it and let it go by pressing a button. Although I defined it as stupid, I did it for a reason: I had to learn how to handle events in C# in a .NET environment. Such events in this app are the pressure of the button , which stops the timer that makes it possible for the ball to move. The motion of an object such as the red cirle is also possible thanks to event handling: as I said, there is a timer with a certain refresh rate, that triggers a draw-ball function every 50 ms. The parameters that define the position of the ball are updated between on tick of the timer and another, and the screen is refreshed before drawing the ball in updated position. Not so stupid in the end!
+
+# Research on app
+| C#                                             | VB.NET                                                       |
+|------------------------------------------------|--------------------------------------------------------------|
+| case-sensitive language                        | not case-sensitive language                                  |
+| "this" is used to refer to  the current object | "Me" is used to refer to the  current object                 |
+| To declare a variable,  ‘declarators’ is used  | To declare a variable ‘Private,  Public, Friend, ..’ is used |
+| ‘Class’ to declare a class                     | Events are automatically bound                               |
+| C-based syntax                                 | Modern english syntax                                        |
 
 
