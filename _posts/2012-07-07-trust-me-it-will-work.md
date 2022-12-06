@@ -62,8 +62,8 @@ Conditional relative frequency then, is simply the relative frequency computed o
 
 Finally, we can show the mathematical relationship between the relative frequencies we computed in the previous article:
 
-$freq(A|B) = freq(A)
-$freq(A ∩ B) = freq(A)freq(B) because: freq(A ∩ B) = freq(A|B)freq(B) = freq(B|A)freq(A)$
+$freq(A|B) = freq(A)$
+$freq(A ∩ B) = freq(A)freq(B)$ because: $freq(A ∩ B) = freq(A|B)freq(B) = freq(B|A)freq(A)$
 
 
 # Application
