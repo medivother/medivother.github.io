@@ -21,7 +21,7 @@ A statistical distribution, describes how values are distributed for a field. In
 But how do we obtain a distribution from a given dataset? A data matrix is made of rows, each of them being a unit ui, and of columns, which are the attributes x1, …, xn of the entities in dataset. To make it easier to explain this concept, let’s say that our dataset is made of 80 people, and some of its attributes are “color of eyes”, “heigth”, “weigth”, etc..
 
 
-|    | $$x_1$$ ... | $x_j$ ... |  ... $x_k$ |
+|    | $$e^{-\frac{t}{RC}}$$ | $x_j$ ... |  ... $x_k$ |
 |----|--------|--------|---------|
 | $u_1$ |        |        |         |
 | $u_i$ |        | $x_i,j$   |         |
