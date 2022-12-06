@@ -90,7 +90,7 @@ More generally, some other applications of statistics in the field of cybersecur
 
 # Application
 
-You can download the application from <a href="https://drive.google.com/drive/folders/1wHeAvKEdp7OieHG6x2YGLcpBX2XFxE04?usp=share_link" download>here</a>.
+You can download the application from <a href="https://drive.google.com/file/d/1yGq1WxgH9OtHRnfa25ZxU2T1X_5tG3sJ/view?usp=sharing" download>here</a>.
 
 <video src="https://user-images.githubusercontent.com/99642347/205895032-6e293975-f1c0-4542-9321-11d493ea71e6.mp4" controls="controls" style="max-width: 730px;">
 </video>
