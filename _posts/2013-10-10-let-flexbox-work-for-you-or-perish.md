@@ -86,7 +86,7 @@ K(a,b) = \int \mathcal{D}x(t) \exp(2\pi i S[x]/\hbar)
 $$
 
 
-<video src="[LINK](https://user-images.githubusercontent.com/99642347/205895032-6e293975-f1c0-4542-9321-11d493ea71e6.mp4)" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/99642347/205895032-6e293975-f1c0-4542-9321-11d493ea71e6.mp4)" controls="controls" style="max-width: 730px;">
 </video>
 
 
