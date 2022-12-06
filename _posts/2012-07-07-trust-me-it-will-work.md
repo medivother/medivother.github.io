@@ -90,7 +90,8 @@ We can show this difference between online and offline algorithms at first illus
 
 The result of this two equasions is exactly the same, the difference relies on the execution inside a machine: the offline algorithm is computed having a list of values xi , which get summed together and divided by the total. This operation is dangerous because of the “two’s complement” which computers use to compute a sum, since in general, the range of an N-bit two’s complement number spans $[−2N−1, 2N−1 − 1]$, so for a huge set of data as a datastream $\sum x_i$ could be out of the span and alterate the result. On the other hand the online algorithm takes into account the previous value of the average $( θ_{n-1} )$, adding to the calculation the weighted difference between the new single value from the input stream and θn-1 . In fact the online equation is more clear if we see it like this:
 
-$θ_n(online) = θ_{n-1} + \frac{(X_n – θ_{n-1}) }{n}$
+$θ_n(online) = θ_{n-1} + \frac{(X_n – θ_{n-1}) }{n}$.
+
 Doing it this way, we not only avoid the *two’s complement problem*, but we also need far less memory to store the average, because we only save $θ_{n-1}$ and $X_n$.
 
 Other online algotithms, such as this one based on heaps, can calculate for example the median: the idea is to maintain smaller half and greater half in two heaps. The smaller half will be sorted in descending order, while greater half will be in ascending order. If I peek the smaller half, I’ll get the biggest value in the smaller half. If I peek the greater half, I’ll get the smallest value in the greater half. These values, two or one depending on the sizes, are the median.
