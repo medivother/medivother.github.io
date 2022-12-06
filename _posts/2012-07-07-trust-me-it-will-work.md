@@ -74,6 +74,10 @@ You can download the application from <a href="https://drive.google.com/file/d/1
 </video>
 
 
+## Description of the app
+That's definitely an upgrade from last homework. The csv parser is now capable of also displaying correctly all the elements of the file. Here we parse a file which had previously been obtained from sniffing the Wifi connection using Wireshark. On the right then is possible to see that the app computes both a univariate distribution and bivariate distribution.
+
+
 # Research on app
 ## Online algorithms
 
