@@ -14,6 +14,18 @@ tags:
 author: mranderson
 ---
 
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+</script>
+
+
 # Distributions
 Definition of statistical distribution
 A statistical distribution, describes how values are distributed for a field. In other words, the statistical distribution shows which values are common and uncommon.
