@@ -2,7 +2,7 @@
 date: 2022-10-18 12:26:40
 layout: post
 title: Homework 3
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+subtitle: This article is about frequency in statistics. We will also analyze the concept of statistical independence.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme1_eoyjtl.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme1_eoyjtl.jpg
@@ -50,18 +50,18 @@ As we said in the definition , the marginal frequency is a ratio that compares a
 Lastly we can calculate the conditional frequency, which compares a joint frequency with a marginal one: doing this we are effectively imposing a condition. For example, let’s calculate the ratio of the boys how play the Xbox: the condition here is that we only care about a subset of our population, the boys, so we are going to take their marginal frequency which is 90.Give that we obtain $C_{b,x}=\frac{15}{90} = 0,16 = 16%.$
 
 # Statistical independence
-“Statistical independence is a concept in probability theory. Two events A and B are statistical independent if and only if their joint probability can be factorized into their marginal probabilities, i.e., P(A ∩ B) = P(A)P(B)”
+“Statistical independence is a concept in probability theory. Two events A and B are statistical independent if and only if their joint probability can be factorized into their marginal probabilities, i.e., $P(A \cup B) = P(A)P(B)$”
 
 This definition of statistical independence gives us a hint about what this concept means, but we can go deeper: let’s start to undestand what independence means also in the frequency world, which is propedeutic to the probabilistic one.
 
 If two attributes are independent, this means that the frequency of the first isn’t altered by the frequency of the second and vice versa. To give a more formal definition of it, we can say that independece between two attributes X and Y means that the conditional distribution of an attribute X over any value y∈Y has the same shape of the marginal distribution of X, and vice versa.
 
-So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: freq(A ∩ B) = freq(A) x freq(B), which also means freq(A|B)=freq(A).
+So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: $freq(A ∩ B) = freq(A) x freq(B)$, which also means $freq(A|B)=freq(A)$.
 
 Conditional relative frequency then, is simply the relative frequency computed on a subset of the population.
 
 Finally, we can show the mathematical relationship between the relative frequencies we computed in the previous article:
 
-freq(A|B) = freq(A)
-freq(A ∩ B) = freq(A) x freq(B) because: freq(A ∩ B) = freq(A|B) x freq(B) = freq(B|A) x freq(A)
+$freq(A|B) = freq(A)4
+$freq(A ∩ B) = freq(A) x freq(B) because: freq(A ∩ B) = freq(A|B) x freq(B) = freq(B|A) x freq(A)$
 
