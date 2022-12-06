@@ -51,14 +51,17 @@ The process of building a dataset starts with the so called observation units: t
 
 if we have a set of cars (data), which isn’t a dataset yet, we can measure the maximum speed of all of each of them (observation) and create a table were each car is a record reporting its name and maximum speed (variables). Now we finally have turned it into a dataset!
 
-|   Car Name (variable)	   |   Maximum speed (variable)   |
-|:--------------------------|:----------------------------:|
-|Toyota Yaris (observation) |	   170 Km/h (observation)    |
-|         Fiat Panda	      |         160 Km/h             |
-|Lamborghini Urus           |	        305 Km/h             |
-|Citroen C2	                |         150 Km/h             |
-|Ferrari Roma	              |         330 Km/h             |
-|Renault Clio	              |         150 Km/h             |
+
+| Car name (variable)        | Maximum speed (variable) |
+|----------------------------|--------------------------|
+| Toyota Yaris (observation) |  170 km/h                |
+| Fiat Panda                 | 160 km/h                 |
+| Lamborghini Urus           | 305 km/h                 |
+| Citroen C2                 | 150 km/h                 |
+| Ferrari Roma               | 330 km/h                 |
+|  Renault Clio              | 150 km/h                 |
+
+
 Dataset
 
 
