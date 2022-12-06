@@ -51,14 +51,17 @@ The process of building a dataset starts with the so called observation units: t
 
 if we have a set of cars (data), which isn’t a dataset yet, we can measure the maximum speed of all of each of them (observation) and create a table were each car is a record reporting its name and maximum speed (variables). Now we finally have turned it into a dataset!
 
-Car Name (variable)	Maximum speed (variable)
-Toyota Yaris (observation)	170 Km/h (observation)
-Fiat Panda	160 Km/h
-Lamborghini Urus	305 Km/h
-Citroen C2	150 Km/h
-Ferrari Roma	330 Km/h
-Renault Clio	150 Km/h
+|   Car Name (variable)	   |   Maximum speed (variable)   |
+|:--------------------------|:----------------------------:|
+|Toyota Yaris (observation) |	   170 Km/h (observation)    |
+|         Fiat Panda	      |         160 Km/h             |
+|Lamborghini Urus           |	        305 Km/h             |
+|Citroen C2	                |         150 Km/h             |
+|Ferrari Roma	              |         330 Km/h             |
+|Renault Clio	              |         150 Km/h             |
 Dataset
+
+
 Having said that, we can conclude defining a distinction between what is a variable and what is an attribute: an attribute is a quality of a certain object, for example the maximum speed of a Lamborghini Urus. A variable is the logical set of attributes that can be measured. Variables can “vary” – for example, be high or low. How high, or how low, is determined by the value of the attribute
 
 To conclude, it is also important to highlight the difference between a dataset, and another fundamental concept of statistics, populations. A population is a set of similar items such as individuals, companies, etc, on which we’d like to draw inference. For example, if we want to make inference about the proportion of HIV positive American citizens, then American citizens is our population. For obvious reasons, we cannot sample the entire population. Thus, we use a subset of our population which is called a sample. When the sampling procedure is done, the data is usually collected in a data set.
@@ -82,14 +85,14 @@ More generally, some other applications of statistics in the field of cybersecur
 
 
 
-#Application
+# Application
 
 <video src="https://user-images.githubusercontent.com/99642347/205895032-6e293975-f1c0-4542-9321-11d493ea71e6.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 
 
-##Description of the app
+## Description of the app
 This is just a quick and stupid app, which lets a red ball bounce around the window. The user has only the ability to stop it and let it go by pressing a button. Although I defined it as stupid, I did it for a reason: I had to learn how to handle events in C# in a .NET environment. Such events in this app are the pressure of the button , which stops the timer that makes it possible for the ball to move. The motion of an object such as the red cirle is also possible thanks to event handling: as I said, there is a timer with a certain refresh rate, that triggers a draw-ball function every 50 ms. The parameters that define the position of the ball are updated between on tick of the timer and another, and the screen is refreshed before drawing the ball in updated position. Not so stupid in the end!
 
 
