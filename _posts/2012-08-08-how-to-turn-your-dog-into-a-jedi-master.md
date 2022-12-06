@@ -27,7 +27,7 @@ author: mranderson
 
 
 # Distributions
-Definition of statistical distribution
+## Definition of statistical distribution
 A statistical distribution, describes how values are distributed for a field. In other words, the statistical distribution shows which values are common and uncommon.
 
 But how do we obtain a distribution from a given dataset? A data matrix is made of rows, each of them being a unit ui, and of columns, which are the attributes x1, …, xn of the entities in dataset. To make it easier to explain this concept, let’s say that our dataset is made of 80 people, and some of its attributes are “color of eyes”, “heigth”, “weigth”, etc..
@@ -42,24 +42,33 @@ But how do we obtain a distribution from a given dataset? A data matrix is made 
 
 Let’s focus on only one attribute at the moment, picking the “color of the eyes” one. Just by reading through the column and counting how many people have blue eyes, we are going to obtain something called relative frequency of that value in our attribute. Intuitively, this is the ratio of the actual number of favourable events to the total. To be more precise, for each value of an attribute xj we can compute its relative frequency, in order to create another table:
 
-color of eyes
-blue eyes	8/80
-brown eyes	62/80
-green eyes	10/80
+
+|            | Color of eyes |
+|------------|---------------|
+| blue eyes  | 8/80          |
+| brown eyes | 62/80         |
+| green eyes | 10/80         |
+
+
 univarite distribution of the attribute “color of the eyes”
+
+
 This is the (univariate) distribution of the color of the eyes of the people in the dataset. The term ‘distribution’ is used in descriptive as well as inductive statistics. In descriptive statistics it stands for the (absolute or relative) frequency of the values of a variable. A frequency distribution describes statistical data. We described it in the table above. In inductive statistics, it describes the distribution of probability of individual values for different variables. Mathematically, this describes the distribution function and the density function. 
 
-Univariate and multivariate distributions
+## Univariate and multivariate distributions
 In statistics, a univariate distribution is a probability distribution of only one random variable. This is in contrast to a multivariate distribution, the probability distribution of a random vector (consisting of multiple random variables).
 
 An example of univariate distribution is the one about the color of the eyes that we saw above: we picked up a random variable and calculated it’s relative frequency to obtain the distribution of the color of the eyes in the dataset. Whereas when we want to calculate the multivariate distribution, we want to know how many entities have the same values for the selected attributes: in other words, the joint frequency.
 
-Conditional and marginal distribution
+## Conditional and marginal distribution
 A conditional distribution is a distribution of values for one variable that exists when you specify the values of other variables. This type of distribution allows you to assess the dispersal of your variable of interest under specific conditions, hence the name.
 
 That might sound a bit complex, but the idea is straightforward.
 
 Suppose you’re selling computers, and you record the type of computer and gender for each sale. Now imagine that you want to assess the dispersal of computer types for only female customers. That’s an example of a conditional distribution. We’re conditioning computer types on the gender variable value of female.
+
+
+![hw2](https://user-images.githubusercontent.com/99642347/205963218-93614740-4e10-4ded-83de-1cda1cb169aa.png)
 
 
 On the other hand, a marginal distribution is a distribution of values for one variable that ignores a more extensive set of related variables in a dataset. That definition sounds a bit convoluted, but the concept is simple. The idea is that when you have a larger set of related variables that you collected for a study, you might want to focus on one of them to answer a specific question.
@@ -68,6 +77,7 @@ Imagine the same context as descripted before: we have a computer shop where we 
 
 
 
+![hw2_1](https://user-images.githubusercontent.com/99642347/205963660-8c2be28d-4f49-4885-8093-e698945b5b2d.png)
 
 
 
