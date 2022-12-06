@@ -56,14 +56,14 @@ This definition of statistical independence gives us a hint about what this conc
 
 If two attributes are independent, this means that the frequency of the first isn’t altered by the frequency of the second and vice versa. To give a more formal definition of it, we can say that independece between two attributes X and Y means that the conditional distribution of an attribute X over any value y∈Y has the same shape of the marginal distribution of X, and vice versa.
 
-So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: $freq(A ∩ B) = freq(A)freq(B)$, which also means $freq(A|B)=freq(A)$.
+So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: $freq(A ∩ B) = freq(A)freq(B)$, which also means    $freq(A \mid B)=freq(A)$.
 
 Conditional relative frequency then, is simply the relative frequency computed on a subset of the population.
 
 Finally, we can show the mathematical relationship between the relative frequencies we computed in the previous article:
 
-$freq(A|B) = freq(A)$
-$freq(A ∩ B) = freq(A)freq(B)$ because: $freq(A ∩ B) = freq(A|B)freq(B) = freq(B|A)freq(A)$
+$freq(A \mid B) = freq(A)$
+$freq(A ∩ B) = freq(A)freq(B)$ because: $freq(A ∩ B) = freq(A \mid B)freq(B) = freq(B \mid A)freq(A)$
 
 
 # Application
