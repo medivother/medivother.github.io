@@ -56,12 +56,42 @@ This definition of statistical independence gives us a hint about what this conc
 
 If two attributes are independent, this means that the frequency of the first isn’t altered by the frequency of the second and vice versa. To give a more formal definition of it, we can say that independece between two attributes X and Y means that the conditional distribution of an attribute X over any value y∈Y has the same shape of the marginal distribution of X, and vice versa.
 
-So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: $freq(A ∩ B) = freq(A) x freq(B)$, which also means $freq(A|B)=freq(A)$.
+So if we want to obtain, for example, the joint relative frequency of event A and event B, we will need to do: $freq(A ∩ B) = freq(A)freq(B)$, which also means $freq(A|B)=freq(A)$.
 
 Conditional relative frequency then, is simply the relative frequency computed on a subset of the population.
 
 Finally, we can show the mathematical relationship between the relative frequencies we computed in the previous article:
 
-$freq(A|B) = freq(A)4
-$freq(A ∩ B) = freq(A) x freq(B) because: freq(A ∩ B) = freq(A|B) x freq(B) = freq(B|A) x freq(A)$
+$freq(A|B) = freq(A)
+$freq(A ∩ B) = freq(A)freq(B) because: freq(A ∩ B) = freq(A|B)freq(B) = freq(B|A)freq(A)$
+
+
+# Application
+
+You can download the application from <a href="https://drive.google.com/file/d/18GKUegWFUPcg5Vbk60R_OkEq9I17uvKR/view?usp=sharing" download>here</a>.
+
+<video src="https://user-images.githubusercontent.com/99642347/205981253-9af5c967-7f83-4db0-9ae2-690ee5d15bf5.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
+
+# Research on app
+## Online algorithms
+
+In computer science, an online algorithm is one that can process an input which is a stream of data: it analyses this data piece-by-piece in a serial fashion, for example, in the order that the input is fed to the algorithm, without having the entire input available from the start.
+
+Traditional algorithms for calculating statistics and models are often infeasible when working with big data. A statistician will run into problems of not just scalability, but of handling data arriving in a continuous stream. Online algorithms, which update estimates one observation at a time, can naturally handle big and streaming data.
+
+We can show this difference between online and offline algorithms at first illustrating the calculation of an averge:
+
+
+![online_algs](https://user-images.githubusercontent.com/99642347/205982280-492531c4-9f6e-4395-b471-3b39776cbc85.png)
+offline and online average
+
+
+The result of this two equasions is exactly the same, the difference relies on the execution inside a machine: the offline algorithm is computed having a list of values xi , which get summed together and divided by the total. This operation is dangerous because of the “two’s complement” which computers use to compute a sum, since in general, the range of an N-bit two’s complement number spans $[−2N−1, 2N−1 − 1]$, so for a huge set of data as a datastream $\sum x_i$ could be out of the span and alterate the result. On the other hand the online algorithm takes into account the previous value of the average $( θ_{n-1} )$, adding to the calculation the weighted difference between the new single value from the input stream and θn-1 . In fact the online equation is more clear if we see it like this:
+
+$θ_n(online) = θ_{n-1} + \frac{(X_n – θ_{n-1}) }{n}$
+Doing it this way, we not only avoid the *two’s complement problem*, but we also need far less memory to store the average, because we only save $θ_{n-1}$ and $X_n$.
+
+Other online algotithms, such as this one based on heaps, can calculate for example the median: the idea is to maintain smaller half and greater half in two heaps. The smaller half will be sorted in descending order, while greater half will be in ascending order. If I peek the smaller half, I’ll get the biggest value in the smaller half. If I peek the greater half, I’ll get the smallest value in the greater half. These values, two or one depending on the sizes, are the median.
 
