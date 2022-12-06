@@ -85,7 +85,7 @@ We can show this difference between online and offline algorithms at first illus
 
 
 ![online_algs](https://user-images.githubusercontent.com/99642347/205982280-492531c4-9f6e-4395-b471-3b39776cbc85.png)
-offline and online average
+
 
 
 The result of this two equasions is exactly the same, the difference relies on the execution inside a machine: the offline algorithm is computed having a list of values xi , which get summed together and divided by the total. This operation is dangerous because of the “two’s complement” which computers use to compute a sum, since in general, the range of an N-bit two’s complement number spans $[−2N−1, 2N−1 − 1]$, so for a huge set of data as a datastream $\sum x_i$ could be out of the span and alterate the result. On the other hand the online algorithm takes into account the previous value of the average $( θ_{n-1} )$, adding to the calculation the weighted difference between the new single value from the input stream and θn-1 . In fact the online equation is more clear if we see it like this:
