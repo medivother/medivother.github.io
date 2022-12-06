@@ -13,6 +13,20 @@ tags:
 author: mranderson
 ---
 
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+</script>
+
+
 # Relative frequency and axioms of probability
 As we will discuss more precisely in the following articles of this homework, probability is an abstract entity, whit certain properties, which is based on axioms. Let’s analize them:
 
