@@ -90,7 +90,7 @@ More generally, some other applications of statistics in the field of cybersecur
 
 # Application
 
-You can download the application from <a href="../applications/homework1" download>here</a>.
+You can download the application from <a href="https://github.com/medivother/medivother.github.io/tree/master/applications/homework1" download>here</a>.
 
 <video src="https://user-images.githubusercontent.com/99642347/205895032-6e293975-f1c0-4542-9321-11d493ea71e6.mp4" controls="controls" style="max-width: 730px;">
 </video>
