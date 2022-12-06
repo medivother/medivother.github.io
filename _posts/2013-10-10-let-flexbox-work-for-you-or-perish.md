@@ -74,22 +74,22 @@ The Imperial Colledge of London uses statistics to identify intrusions and anoma
 
 More generally, some other applications of statistics in the field of cybersecurity are:
 
-Statistics used to predict cybersecurity risk
-Change point detection
-Graph analysis
-Penalised regression analysis
-Machine learning
+- Statistics used to predict cybersecurity risk
+- Change point detection
+- Graph analysis
+- Penalised regression analysis
+- Machine learning
 
 
-$$
-K(a,b) = \int \mathcal{D}x(t) \exp(2\pi i S[x]/\hbar)
-$$
 
+#Application
 
 <video src="https://user-images.githubusercontent.com/99642347/205895032-6e293975-f1c0-4542-9321-11d493ea71e6.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 
 
+##Description of the app
+This is just a quick and stupid app, which lets a red ball bounce around the window. The user has only the ability to stop it and let it go by pressing a button. Although I defined it as stupid, I did it for a reason: I had to learn how to handle events in C# in a .NET environment. Such events in this app are the pressure of the button , which stops the timer that makes it possible for the ball to move. The motion of an object such as the red cirle is also possible thanks to event handling: as I said, there is a timer with a certain refresh rate, that triggers a draw-ball function every 50 ms. The parameters that define the position of the ball are updated between on tick of the timer and another, and the screen is refreshed before drawing the ball in updated position. Not so stupid in the end!
 
 
