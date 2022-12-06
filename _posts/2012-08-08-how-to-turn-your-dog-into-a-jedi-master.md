@@ -2,7 +2,7 @@
 date: 2018-02-03 12:26:40
 layout: post
 title: Homework 2
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+subtitle: In this article we will go deep into the concept of distribution.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme8_knvabs.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme8_knvabs.jpg
@@ -20,11 +20,14 @@ A statistical distribution, describes how values are distributed for a field. In
 
 But how do we obtain a distribution from a given dataset? A data matrix is made of rows, each of them being a unit ui, and of columns, which are the attributes x1, …, xn of the entities in dataset. To make it easier to explain this concept, let’s say that our dataset is made of 80 people, and some of its attributes are “color of eyes”, “heigth”, “weigth”, etc..
 
-x1…	xj…	xk
-u1…			
-ui…		Xi,j	
-un			
-dataset
+
+|    | $x_1$ ... | xj ... |  ... xk |
+|----|--------|--------|---------|
+| u1 |        |        |         |
+| ui |        | xi,j   |         |
+| un |        |        |         |
+
+
 Let’s focus on only one attribute at the moment, picking the “color of the eyes” one. Just by reading through the column and counting how many people have blue eyes, we are going to obtain something called relative frequency of that value in our attribute. Intuitively, this is the ratio of the actual number of favourable events to the total. To be more precise, for each value of an attribute xj we can compute its relative frequency, in order to create another table:
 
 color of eyes
