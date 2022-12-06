@@ -1,12 +1,12 @@
 ---
-date: 2018-02-03 12:26:40
+date: 2022-10-12 12:26:40
 layout: post
 title: Homework 2
 subtitle: In this article we will go deep into the concept of distribution.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme8_knvabs.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme8_knvabs.jpg
-category: tutorial
+category: distributions
 tags:
   - jedi
   - doggo
