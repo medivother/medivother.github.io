@@ -1,12 +1,12 @@
 ---
-date: 2018-07-20 12:26:40
+date: 2022-11-1 12:26:40
 layout: post
 title: Homework 5
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+subtitle: In this article we will explain the possible derivations of the mean, and also address the problem of convergence.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559820489/js-code_n83m7a.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg
-category: code
+category: mean
 tags:
   - platform
   - javascript
@@ -14,26 +14,42 @@ tags:
 author: mranderson
 ---
 
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+</script>
+
+
 
 # Arithmetic mean and its possible derivations
 The word “statistics” is used in various ways: we used it to define a science, which we are studying at the moment; we usually use it when we look at graphs and charts, which we call “statistics”; lastly, this term can be used to define functions of the observed data.
 
 The most famous and used of this family of functions is the mean, also known as average: to compute an average from a uniform set of data, we sum all of them and then we divide for the number of terms. But why do we do this? There are many possible ways to derive the mean, and we are going to analyze three of them, which are related to the properties of this function:
 
-Invariance
-Compensation
-Minimization of the distance
-Mean from the invariance property
+- Invariance
+- Compensation
+- Minimization of the distance
+
+
+## Mean from the invariance property
 
 The mean can be defined as the value that leaves F(d) unchanged. Let’s prove it:
 
-tabella
+| $\tilde{x} + \tilde{x} + ... + \tilde{x} + \tilde{x}$ = |
+|-----------------------|
+| $= x_1 + x_2 + ... + x_n$ |
 
-Nx = ∑ xi = ∑xi/n
+$n\tilde{X}= {\sum x_i} = \frac{\sum x_i}{n}$
 
-In this example our F(d) is a function that sums all of its terms, and then divides them by their number: the mean in this case is called “arithmetic mean”, and it represents a number which, if added into the set, basically leaves the sum unchanged. We can apply this reasoning also to different F(d): an example is the function which multiplies all the terms of the set. In this case the average is obtained by squaring this product of n terms by n, and the mean is called “geometric mean”. This function is deeply used in economics to, for example, get the average interest rate of a series.
+In this example our F(d) is a function that sums all of its terms, and then divides them by their number: the mean in this case is called *arithmetic mean*, and it represents a number which, if added into the set, basically leaves the sum unchanged. We can apply this reasoning also to different F(d): an example is the function which multiplies all the terms of the set. In this case the average is obtained by squaring this product of n terms by n, and the mean is called *geometric mean*. This function is deeply used in economics to, for example, get the average interest rate of a series.
 
-Mean from compensation property
+## Mean from compensation property
 
 We could also derive the mean from the compensation property: compensation happens, for example, when the sum of positive and negative deviations between random points on a straight line and a certain fixed point is zero. This concept will be more clear looking at the graph below:
 
