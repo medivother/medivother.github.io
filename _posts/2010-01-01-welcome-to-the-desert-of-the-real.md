@@ -1,8 +1,8 @@
 ---
-date: 2019-05-16T23:48:05.000Z
+date: 2022-11-16T23:48:05.000Z
 layout: post
 title: Homework 8
-subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+subtitle: 'Mimmi.'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
@@ -126,3 +126,6 @@ Which is, of course, the common form of what is known as the Normal distribution
 
 One will find that $σ^{2}$ is called the variation, and σ is the standard deviation. The parameters $σ^{2}$ and μ, that is, the variation and the mean, may be chosen arbitrarily, and uniquely define the distribution.
 
+
+# PURIN
+$BALOO^2$
