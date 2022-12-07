@@ -2,7 +2,7 @@
 date: 2022-11-16T23:48:05.000Z
 layout: post
 title: Homework 8
-subtitle: 'Mimmi.'
+subtitle: 'Possible derivations of the normal distributions'
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua.
@@ -127,5 +127,31 @@ Which is, of course, the common form of what is known as the Normal distribution
 One will find that $σ^{2}$ is called the variation, and σ is the standard deviation. The parameters $σ^{2}$ and μ, that is, the variation and the mean, may be chosen arbitrarily, and uniquely define the distribution.
 
 
-# PURIN
-$BALOO^2$
+# Application
+
+## Polar coordinates
+
+You can download the application from <a href="https://drive.google.com/file/d/1R1Qfo3_U6NL73DyDK7vSbK3uqJHmmT2L/view?usp=sharing" download>here</a>.
+
+<video src="https://user-images.githubusercontent.com/99642347/206231464-dd1d2bbd-c655-4825-a63a-12fa10cf44da.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
+
+
+## Description of the app
+This app generates random points using polar coordinates. The radius and the angle are sampled as uniform distributions and then graph the distribution of the points obtained inside the circle of max radius.
+
+# Application
+
+## Generation of distributions
+You can download the application from <a href="https://drive.google.com/file/d/1Ixn8y2aKpLiKiT4hGryAFgN4q0FW8Ncq/view?usp=sharing" download>here</a>.
+
+<video src="https://user-images.githubusercontent.com/99642347/206236050-467993cc-cd25-4d57-99ba-aa9a4df82675.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
+
+
+
+## Description of the app
+
+In this app we from a sample of points taken from a normal distribution and the we computed the distributions of the following random variables: X, $X^2$, $\frac{X}{Y^2}$, $\frac{X^2}{Y^2}$ , $\frac{X}{Y}$.
