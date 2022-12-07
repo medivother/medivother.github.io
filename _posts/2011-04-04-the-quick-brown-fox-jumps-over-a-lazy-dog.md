@@ -13,6 +13,20 @@ tags:
 author: mranderson
 ---
 
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']]
+    }
+  };
+</script>
+
+
+
 # Concept of population and sampling distribution
 ## Population
 Inferential statistics is made of two layers: one empirical. which we will call “descriptive”, and the second one which is totally theoretical and imaginary, which we will call “inferential”. The concept of population is present in both of this layers, but with some differences between the two.
