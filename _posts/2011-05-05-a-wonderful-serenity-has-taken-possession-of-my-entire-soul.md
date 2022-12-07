@@ -69,7 +69,7 @@ We could also define the mean as the value which is the nearest to the data.
 
 Our aim is to find the value c so that it is the closest to all the point. We could either do it by making a difference  and using its absolute value
 
-$d(xi,c) = |xi -c|$
+$d(xi,c) = \mid x_i -c\mid$
 
 or we could use the square
 
@@ -98,7 +98,7 @@ There is a difference between what we call mathematical convergence and the conc
 
 ## Mathematical convergence
 
-Given $X_n$ a sequence of real numbers, $lim_{n->∞} x_n = a$ if $∀ e>0$ small there exist $n_0$ s.t. $|x_n -a| < e \ ∀ \ n > n_0$
+Given $X_n$ a sequence of real numbers, $lim_{n->∞} x_n = a$ if $∀ e>0$ small there exist $n_0$ s.t. $\mid x_n -a \mid < e \ ∀ \ n > n_0$
 
 It would be great to do the same in probability, computing convergence just by making the limit of a sequence, but it is not the case: the definition of convergence in the probabilistic world is different because we have to deal with random variables, which behave in a complete different manner in contrast to a sequence $X_n$. So what we need to do first, is to define the concept of *distance of two random variables*.
 
@@ -112,11 +112,11 @@ Take a random variable $X$ and a strictly positive number epsilon.
 
 Suppose that we consider $X_n$ far from $X$ when
 
-$|X_n -X | > e$
+$\mid X_n -X \mid > e$
 
 Then, the probability
 
-$P(|X_n -X| > e)$
+$P(\mid X_n -X \mid > e)$
 (1)
 
 is the probability that $X_n$ is far from $X$.
@@ -127,9 +127,9 @@ If $X_n$ converges to $X$, the probability that $X_n$ and $X$ are far from each 
 
 In other words, we should have:
 
-$lim_{n->∞} P(|X_n-X>e|) = 0$.
+$lim_{n->∞} P(\mid X_n-X>e \mid) = 0$.
 
-Note that $P(|X_n-X>e|)$ is a sequence of real numbers. Therefore, the limit in equation (1) is the usual limit of a sequence of real numbers. We would like to be very restrictive on our criterion for deciding whether $X_n$ is far from $X$. As a consequence, condition (1) should be satisfied $\forall \epsilon$.
+Note that $P(\mid X_n-X>e \mid)$ is a sequence of real numbers. Therefore, the limit in equation (1) is the usual limit of a sequence of real numbers. We would like to be very restrictive on our criterion for deciding whether $X_n$ is far from $X$. As a consequence, condition (1) should be satisfied $\forall \epsilon$.
 
 ### Definition for sequences of random variables
 
@@ -137,7 +137,7 @@ The intuitive considerations above lead us to the following definition of conver
 
 *Def* Let $X_n$ be a sequence of random variables defined on a sample space $\Omega$. We say that $X_n$ is convergent in probability to a random variable $X$ defined on $\Omega$ if and only if:
 
-$lim_{n->∞} P(|X_n-X>e|) = 0 \ ∀ \ e>0$
+$lim_{n->∞} P(\mid X_n-X>e \mid) = 0 \ ∀ \ e>0$
 
 The variable $X$ is called the probability limit of the sequence.
 
