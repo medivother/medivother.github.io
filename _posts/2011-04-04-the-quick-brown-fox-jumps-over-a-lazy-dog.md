@@ -43,7 +43,7 @@ We “infer” theorical probabilities from the empirical ones, on a population 
 
 - Estimation
 - Test
-- 
+
 If we want to adopt the second one, we need to start from some hypothesis on the unknown population, then make a survey on the sample and see if it is coherent with our initial belief.
 
 ## Sampling distribution
@@ -108,3 +108,5 @@ You can download the application from <a href="https://drive.google.com/file/d/1
 
 
 ## Description of the app
+Take any population and any variable X. Draw m (large) samples of size n (as you like) and represent the following two empirical sampling distributions: Sampling Distribution of the Mean and Sampling Distribution of the Variance.
+Finally, for each empirical sampling distribution compute the empirical sample mean and empirical sample variance and compare with the corrisponding values in the population.
