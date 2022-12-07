@@ -1,8 +1,8 @@
 ---
-date: 2018-11-22 12:26:40
+date: 2022-11-15 12:26:40
 layout: post
 title: Homework 7
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+subtitle: Lebesgue-Stieltjes integration.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme9_v273a9.jpg
 optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme9_v273a9.jpg
@@ -151,7 +151,7 @@ Nevertheless, if the coin is tossed enough times, because the probability of the
 To deeply understand the law of large numbers we will start from two important inequalitites that will lead us to the definition:
 
 - Markov inequality, which states that $P(X\geq a)\leq \frac{E(X)}{a}$
-- Chebyshev Inequality, which states that $P(|X-E(X)|\geq a)\leq\frac{Var(X)}{a^2}$
+- Chebyshev Inequality, which states that $P(\mid X-E(X)\mid \geq a)\leq\frac{Var(X)}{a^2}$
 
 Let’s consider now any random variable X, let $\bar{X}$ be sample mean and we have already seen that $E(\bar{X})=\mu$ and that $Var(\bar{X})=\frac{σ^2}{n}$ in the previous article. By Chebyshev inequality:
 
@@ -159,7 +159,7 @@ $P(\mid \bar{X}-\mu \mid \geq a)\leq\frac{\sigma^2}{na^{2}}$
 
 Now, since it is called Law of *large numbers*, let's consider $n->\infty$
 
-$=> P(|\bar{X}-\mu|\geq a)\rightarrow 0$.
+$=> P(\mid\bar{X}-\mu \mid \geq a)\rightarrow 0$.
 
 This is perfectly alligned with our previous intuition since this is the definition of convergence in probability:  we have that for n→∞, the sample mean $\bar{X}$ converges in probability to the expected value μ.
 
